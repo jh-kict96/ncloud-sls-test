@@ -1,0 +1,10 @@
+{
+  "name": "cur-sls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "keywords": [],
+  "devDependencies": {
+    "serverless-navercloud": "^1.0.2"
+  }
+}
