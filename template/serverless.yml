@@ -3,10 +3,20 @@ service: ncloud-sls
 provider:
   name: navercloud
   region: kr
+  stage: dev
 
 functions:
   hello:
     handler: handler.hello
+    runtime: nodejs:16
+    packageName: myPackage
+
+resources:
+  package:
+    myPackage:
+      parameters:
+        a: hello
+        b: world
 
 plugins:
   - serverless-navercloud
