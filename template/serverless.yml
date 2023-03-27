@@ -1,0 +1,12 @@
+service: ncloud-sls
+
+provider:
+  name: navercloud
+  region: kr
+
+functions:
+  hello:
+    handler: handler.hello
+
+plugins:
+  - serverless-navercloud
